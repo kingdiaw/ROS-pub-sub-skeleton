@@ -3,8 +3,9 @@
 import rospy
 from std_msgs.msg import String
 '''
-ros_pkg = talker
-ros_topic = chatter
+name of our node = talker
+ros topic = chatter
+message type = String
 '''
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)
